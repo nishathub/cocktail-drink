@@ -1,0 +1,96 @@
+body{
+    /* background-color: rgb(84, 84, 84); */
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+}
+h1,h2,h3,h4,h5{
+    margin: 0;
+}
+header{
+    text-align: center;
+    padding: 30px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.search-box{
+    padding: 10px 0 30px 0;
+    display: flex;
+    gap: 2px;
+}
+#search-field{
+    font-size: 18px;
+    padding: 4px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+#ingredient-collection{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+#error-message{
+    margin-top: 20px;
+    color: red;
+}
+.content{
+    max-width: 1000px;
+}
+#card-holder{
+    width: 100%;
+    padding: 20px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.card{
+    background-color: rgb(65, 89, 110);
+    width: 200px;
+    height: auto;
+    padding: 2px;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card img{
+    max-width: 100%;
+    height: auto;
+}
+.card h4{
+    /* margin: 10px 0; */
+}
+.modal-content{
+    background-color: rgb(40, 72, 127);
+    color: whitesmoke;
+}
+#modal-body img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.ingredient-filter h4{
+    text-align: center;
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 480px){
+    .card{
+        width: 300px;
+    }
+    .modal-dialog{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .modal-content{
+        width: 300px;
+        justify-content: center;
+    }
+}
